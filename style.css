@@ -1,0 +1,322 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #364f6b;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: large;
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #f0f0f0;
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    font-family: 'Open Sans' , sans-serif;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic sans ms';
+    color: #364f6b;
+}
+
+h2 {
+    font-family: 'Comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-signup {
+    background: #0000ff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.tbl-signup:hover {
+    background: #ffff00;
+    text-decoration: none;
+}
+
+
+a.tbl-biru {
+    background: #0000ff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.tbl-biru:hover {
+    background: #ffff00;
+    text-decoration: none;
+}
+
+.kolom .quote {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic sans ms';
+    color: #d2691e;
+}
+
+.cat{
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comic sans ms';
+}
+
+.opsi{
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comic sans ms';
+}
+
+.kolom .tentang {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Comic sans ms';
+    color: #364f6b;
+}
+
+.profile {
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: 'Comic sans ms';
+    color: #d2691e;
+}
+
+#contact {
+    background: #f0f0f0;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid #000000;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Comic sans ms';
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 50px;
+    }
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        position: relative;
+        display: block;
+    }
+}
+
+.body-reg {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?size=626&ext=jpg&ga=GA1.2.1306341684.1654574888);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login-box{
+    width: 350px;
+    height: auto;
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.login-box .kepala {
+    text-align: center;
+    font-size: 35px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.login-box input{
+    width: 90%;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+input.tbl-biru {
+    background: #0000ff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+input.tbl-biru:hover {
+    background: #00ff00;
+    text-decoration: none;
+}
+
+.error {
+    height: auto;
+    color: #ff0000;
+}
+
+.sukses {
+    height: auto;
+    color: #00ff00;
+}
+
+@media screen and (max-width: 700px) {
+    .body-reg {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(https://img.freepik.com/free-vector/isometric-people-working-with-technology_52683-19078.jpg?size=626&ext=jpg&ga=GA1.2.1306341684.1654574888);
+    }
+}
