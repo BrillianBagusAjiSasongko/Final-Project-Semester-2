@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4a90e2, #9b59b6, #2ecc71); /* Gradient background for the entire page */
+            min-height: 100vh; /* Ensure body takes up full height */
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 0; /* Remove padding-top to align with navbar */
+            background: rgba(0, 0, 0, 0.75); /* Black background with 75% opacity */
+            color: white; /* Ensure text is readable on dark background */
+            border-radius: 10px; /* Optional: Rounded corners for a softer look */
+            flex: 1; /* Ensure container grows to fill available space */
+            position: relative; /* Ensure footer is positioned inside container */
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            margin-bottom: 20px; /* Space between navbar and content */
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border: 2px solid blue;
+            padding: 10px;
+            display: inline-block;
+            background-color: black; /* Black background for section headers */
+            color: white; /* White text color for contrast */
+            margin: 0;
+        }
+        .stars {
+            display: inline-block;
+        }
+        .stars::before {
+            content: '★★★★★';
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, gold calc(var(--rating) / 5 * 100%), #ddd calc(var(--rating) / 5 * 100%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        footer {
+            background-color: #f8f8f8;
+            border-top: 2px solid blue;
+            padding: 20px;
+            text-align: left;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow wrapping if the screen is narrow */
+            color: black; /* Black text color for footer content */
+        }
+        footer .footer-section {
+            width: 30%; /* Set each section to take up 30% of the footer width */
+            margin-bottom: 20px;
+        }
+        .footer-section h2 {
+            border: none; /* No border for footer section titles */
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        .footer-section p {
+            margin: 5px 0; /* Add margin to paragraphs for spacing */
+        }
+        .copyright {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            color: black; /* Black text color for copyright */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <h2 style="color: white; margin: 0;">Erwin Ega Cahya</h2>
+            </div>
+            <div class="navbar-right">
+                <a href="#tentang-saya">Tentang Saya</a>
+                <a href="#keahlian">Keahlian</a>
+                <a href="#pendidikan">Pendidikan</a>
+                <a href="#pengalaman-kerja">Pengalaman Kerja</a>
+                <a href="#kontak-sosial-media">Kontak & Sosial Media</a>
+            </div>
+        </div>
+        <div class="header">
+            <img src="Ega.jpeg" alt="Foto Profil">
+            <h1>Erwin Ega Cahya</h1>
+        </div>
+        <div class="section" id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang lulusan tekhnik elektronika industri, saya ingin bekerja untuk membantu 
+            <p>ibu saya memnuhi perekonomian keluarga dan mencari pengalaman, </p>
+            <p>Saya seorang yang rajin dan bertanggung jawab dalam bekerja</p>
+        </div>
+        <div class="section" id="keahlian">
+            <h2>Keahlian</h2>
+            <h3>Software</h3>
+            <p>Microsoft Word: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+            <p>Microsoft Excel: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+            <p>Microsoft PowerPoint: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+            <h3>Softskill</h3>
+            <p>Public Speaking: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+            <p>Komunikasi: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+            <p>Kerjasama: <span class="stars" style="--rating: 4.5;"></span> (4.5/5)</p>
+        </div>
+        <div class="section" id="pendidikan">
+            <h2>Pendidikan</h2>
+            <p>SDN MENGGARE - Tahun 2009 - 2015</p>
+            <p>SMP NEGERI 1 SLAHUNG - Tahun 2015 - 2018</p>
+            <p>SMK NEGERI 1 JENANGAN PONOROGO - Jurusan Teknik Elektronika Industri - Tahun 2018 - 2021</p>
+        </div>
+        <div class="section" id="pengalaman-kerja">
+            <h2>Pengalaman Kerja</h2>
+            <p>PT. Javis Tekologi Al-Barokah - Produksi - Oktober 2019 s/d Maret 2020</p>
+        </div>
+        <footer>
+            <div class="footer-section" id="kontak-sosial-media">
+                <h2>Kontak & Sosial Media</h2>
+                <p>Email: erwinegacahya@gmail.com</p>
+                <p>Instagram: erwinega123</p>
+                <p>Twitter: erwinegac</p>
+                <p>Facebook: Erwin Ega</p>
+            </div>
+            <div class="footer-section" id="alamat">
+                <h2>Alamat</h2>
+                <p>Jln. Diponegoro Rt.02/Rw.01</p>
+                <p>Ds. Menggare, Kec. Slahung,</p>
+                <p>Kab. Ponorogo, Jawa Timur</p>
+            </div>
+            <div class="footer-section" id="keahlian-bahasa">
+                <h2>Keahlian Bahasa</h2>
+                <p>Bahasa Indonesia: <span class="stars" style="--rating: 5;"></span> (5/5)</p>
+                <p>Bahasa Inggris: <span class="stars" style="--rating: 4;"></span> (4/5)</p>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>&copy; 2024 Erwin Ega Cahya. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
